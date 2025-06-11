@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "GenerateCodeHk"
+version = "1.0.0"
+description = "Generate an identifiying code with minimum density for hexagonal grids with finite number of rows"
+authors = [
+    {name = "Gabriel", email = "gasobral@gmail.com"}
+]
+license = {text = "CC 4.0"}
+readme = "README.md"
+requires-python = ">=3.6"
+dependencies = [
+    "networkx>=3.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/ebimsv/mlpredictor"
