@@ -18,8 +18,8 @@ of rows. We two implementations:
 
 | Implementation | Description |
 | ----------- | ----------- |
-| Hk_lemon_eng.cc | Creates a configuration graph using barcodes of length 8 |
-| Hk_lemon_engV2.cc | Creates a configuration graph using barcodes of length 6 |
+| [Hk_lemon_eng_8bar.cc](GenerateCodeHk/IdentifyingCode/Hk_lemon_eng_8bar.cc) | Creates a configuration graph using barcodes of length 8 |
+| [Hk_lemon_eng_6bar.cc](GenerateCodeHk/IdentifyingCode/Hk_lemon_eng_6bar.cc) | Creates a configuration graph using barcodes of length 6 |
 
 ## Usage
 There are two codes: Hk_lemon_eng.cc and Hk_lemon_engV2.cc. Once they are compiled,
