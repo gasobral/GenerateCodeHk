@@ -15,14 +15,14 @@ This work is licensed under a
 During the research about identifying codes (*idcode* for short) in
 hexagonal grids with fine number of rows, we developed a few programs to
 find such *idcodes*. The codes
-[Hk_lemon_eng_8bar.cc](GenerateCodeHk/GenerateCodeHk/Hk_lemon_eng_8bar.cc)
+[Hk_lemon_eng_8bar.cc](GenerateCodeHk/Hk_lemon_eng_8bar.cc)
 and
-[Hk_lemon_eng_6bar.cc](GenerateCodeHk/GenerateCodeHk/Hk_lemon_eng_6bar.cc)
+[Hk_lemon_eng_6bar.cc](GenerateCodeHk/Hk_lemon_eng_6bar.cc)
 use the concepts *configuration graph* and *bar code* to find *idcodes*
 with minimum densities for $H_k$, the hexagonal grid with $k$ rows
 (where $k \geq 2$). *Discharging Method* is applied to ensure those
 codes have the minimum density. Whereas the code
-[GenerateHkCode.py](GenerateCodeHk/GenerateCodeHk/GenerateHkCode.py)
+[GenerateHkCode.py](GenerateCodeHk/GenerateHkCode.py)
 uses a linear program to find *idcodes* for $H_k$. They are not
 necessarily *idcodes* with minimum density, but they can provide upper
 bounds for them. Below you can find a table with a list of the programs
@@ -36,23 +36,23 @@ published in RAIO and this
 
 | Implementation | Description |
 | ----------- | ----------- |
-| [Hk_lemon_eng_8bar.cc](GenerateCodeHk/GenerateCodeHk/Hk_lemon_eng_8bar.cc) | Finds an *idcode* with minimum density using a configuration graph using barcodes of length 8 |
-| [Hk_lemon_eng_6bar.cc](GenerateCodeHk/GenerateCodeHk/Hk_lemon_eng_6bar.cc) | Finds an *idcode* with minimum density using a configuration graph using barcodes of length 6 |
-| [GenerateHkCode.py](GenerateCodeHk/GenerateCodeHk/GenerateHkCode.py) | Finds an *idcode* using a linear program (guroby) |
+| [Hk_lemon_eng_8bar.cc](GenerateCodeHk/Hk_lemon_eng_8bar.cc) | Finds an *idcode* with minimum density using a configuration graph using barcodes of length 8 |
+| [Hk_lemon_eng_6bar.cc](GenerateCodeHk/Hk_lemon_eng_6bar.cc) | Finds an *idcode* with minimum density using a configuration graph using barcodes of length 6 |
+| [GenerateHkCode.py](GenerateCodeHk/GenerateHkCode.py) | Finds an *idcode* using a linear program (guroby) |
 
 
 ## How to Use
 For the codes
-[Hk_lemon_eng_8bar.cc](GenerateCodeHk/GenerateCodeHk/Hk_lemon_eng_8bar.cc)
+[Hk_lemon_eng_8bar.cc](GenerateCodeHk/Hk_lemon_eng_8bar.cc)
 and
-[Hk_lemon_eng_6bar.cc](GenerateCodeHk/GenerateCodeHk/Hk_lemon_eng_6bar.cc)
+[Hk_lemon_eng_6bar.cc](GenerateCodeHk/Hk_lemon_eng_6bar.cc)
 is required to install [lemon
 libray](https://lemon.cs.elte.hu/trac/lemon). Once they are compiled,
 just provide the number of lines of the hexagonal grid as an argument in
 the command line. When program terminates its execution, it will output
 the vertices which belongs to periodic identifying code. The pattern of
 the *idcode* is saved at [Codes](Codes) directory. The script
-[GenerateHkCode.py](GenerateCodeHk/GenerateCodeHk/GenerateHkCode.py)
+[GenerateHkCode.py](GenerateCodeHk/GenerateHkCode.py)
 requires *networkx* and *guroby*. In order to execute it, just provide
 the number of rows and columns. The will output the patter of the
 *idcode* once it terminates. Below you can find project structure.
