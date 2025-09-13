@@ -22,6 +22,7 @@
 #include <lemon/smart_graph.h>
 #include <lemon/full_graph.h>
 #include <chrono>
+#include <string>
 
 
 /* Namespaces - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -976,7 +977,7 @@ int main(int argc, char **argv)
        << chrono::duration_cast<chrono::nanoseconds>(end - start).count() % 1000000
        << "ns\n";
 
-  code_file.open("code_pattern.txt");
+  code_file.open("../Codes/CodigoH" + to_string(num_lines) + "GrafoConfig.txt");
   cout << "columns: " << MMC.cycleSize() * NEIGHBOORHOD_SIZE << endl;
   cout << "density: " << (MMC.cycleMean() * MMC.cycleSize())/ (k * MMC.cycleSize() * NEIGHBOORHOD_SIZE)
        << "\n";
